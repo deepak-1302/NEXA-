@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Nexa | From Intent to Action</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Plus Jakarta Sans',Inter,sans-serif}
+body{overflow-x:hidden;background:radial-gradient(circle at top left,rgba(79,172,254,.18),transparent 25%),radial-gradient(circle at bottom right,rgba(168,85,247,.18),transparent 30%),linear-gradient(180deg,#030615,#090b25 38%,#111827 100%);color:#fff;scroll-behavior:smooth}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,rgba(79,172,254,.18),transparent 18%),radial-gradient(circle at 80% 15%,rgba(168,85,247,.12),transparent 20%);pointer-events:none;z-index:-1}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 8%;position:sticky;top:0;background:rgba(7,11,27,.8);backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(0,0,0,.18);z-index:10;transition:background .35s ease,transform .35s ease}
+.logo{font-family:'Plus Jakarta Sans',Inter,sans-serif;font-size:34px;font-weight:900;letter-spacing:-.04em;text-transform:lowercase;display:flex;align-items:center;gap:14px}
+.logo img{width:42px;height:42px;object-fit:contain}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{text-decoration:none;color:#f8fafc;font-size:15px;font-weight:500;transition:color .25s ease}
+nav a:hover{color:#7dd3fc}
+button{padding:14px 26px;border:none;border-radius:999px;font-weight:700;cursor:pointer;transition:transform .35s ease,box-shadow .35s ease,background .35s ease,color .35s ease}
+.primary{background:linear-gradient(135deg,#4facfe,#a855f7);color:#fff}
+.secondary{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff}
+button:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(79,172,254,.18)}
+.hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:100px 8%;min-height:92vh}
+.hero-left{max-width:560px;animation:fade 1s ease-out forwards}
+.hero h1{font-size:clamp(3rem,5vw,5.25rem);line-height:1.02;letter-spacing:-.04em;max-width:11ch}
+.hero h1 span{background:linear-gradient(90deg,#4facfe,#00f2fe,#be22ff);background-size:300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:g 5s linear infinite}
+@keyframes g{to{background-position:300%}}
+.hero p{margin:28px 0 34px;color:#d1d5db;font-size:1.05rem;max-width:620px;line-height:1.8}
+.features{padding:70px 8%}.features h2{text-align:center;margin-bottom:30px;font-size:2.4rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.08);padding:30px;border-radius:24px;transition:transform .45s ease,box-shadow .45s ease,opacity .45s ease;opacity:0;transform:translateY(32px)}
+.card.show,.vision.show,footer.show{opacity:1;transform:translateY(0)}
+.card:hover{transform:translateY(-12px) scale(1.02);box-shadow:0 24px 60px rgba(79,172,254,.16)}
+.card h3{margin:18px 0 12px;font-size:1.25rem}
+.card p{color:#cbd5e1;line-height:1.75}
+.vision,footer{padding:70px 8%;text-align:center;opacity:0;transform:translateY(30px);transition:.7s}
+.vision h2{font-size:2.6rem;margin-bottom:18px}
+.vision p{max-width:680px;margin:0 auto;color:#cbd5e1;line-height:1.8;font-size:1.05rem}
+footer{padding-bottom:90px}
+footer h3{margin-bottom:18px;font-size:1.6rem}
+footer p{color:#94a3b8}
+@keyframes fade{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<nav><div class="logo"><img src="WhatsApp Image 2026-06-21 at 10.13.36 PM.jpeg" alt="Nexa logo">Nexa</div><ul><li><a href="#">Home</a></li><li><a href="#">Features</a></li><li><a href="#">Roadmap</a></li><li><a href="#">About</a></li></ul></nav>
+<section class="hero">
+<div class="hero-left">
+<h1>Your Personal <span>AI Operating System</span></h1>
+<p>Nexa doesn't just answer questions. It remembers, plans, acts, and grows with you.</p>
+<button class="primary">Launch Nexa</button>
+<button class="secondary">Learn More</button>
+</div>
+</section>
+<section class="features"><h2>Core Features</h2>
+<div class="cards">
+<div class="card">🧠 <h3>Memory</h3><p>Remembers important things.</p></div>
+<div class="card">🎯 <h3>Goals</h3><p>Keeps you on track.</p></div>
+<div class="card">⚡ <h3>Actions</h3><p>Automates work.</p></div>
+<div class="card">🌐 <h3>Browser</h3><p>Uses websites like a human.</p></div>
+<div class="card">📚 <h3>Learning</h3><p>Improves continuously.</p></div>
+<div class="card">🔒 <h3>Privacy</h3><p>Your data stays yours.</p></div>
+</div></section>
+<section class="vision"><h2>From Intent to Action</h2><p>Nexa becomes your second brain.</p></section>
+<footer><h3>Nexa</h3><p>©2026 All rights reserved.</p></footer>
+<script>
+// =========================
+// Nexa Script
+// =========================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Reveal animation
+    const reveals = document.querySelectorAll(".card, .hero-left, .hero-right, .vision");
+
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.style.opacity="1";
+                entry.target.style.transform="translateY(0)";
+            }
+        });
+    },{threshold:0.15});
+
+    reveals.forEach(item=>{
+        item.style.opacity="0";
+        item.style.transform="translateY(50px)";
+        item.style.transition="0.8s ease";
+        observer.observe(item);
+    });
+
+    // Smooth Scroll
+
+    document.querySelectorAll("a").forEach(link=>{
+
+        link.addEventListener("click",function(e){
+
+            const href=this.getAttribute("href");
+
+            if(href && href.startsWith("#")){
+
+                e.preventDefault();
+
+                document.querySelector(href).scrollIntoView({
+                    behavior:"smooth"
+                });
+
+            }
+
+        });
+
+    });
+
+});
+
+// Mouse Glow
+
+const glow=document.createElement("div");
+
+glow.style.position="fixed";
+glow.style.width="300px";
+glow.style.height="300px";
+glow.style.borderRadius="50%";
+glow.style.pointerEvents="none";
+glow.style.background="radial-gradient(circle, rgba(139,92,255,.25), transparent 70%)";
+glow.style.filter="blur(40px)";
+glow.style.transform="translate(-50%,-50%)";
+glow.style.zIndex="-1";
+
+document.body.appendChild(glow);
+
+window.addEventListener("mousemove",(e)=>{
+    glow.style.left=e.clientX+"px";
+    glow.style.top=e.clientY+"px";
+});
+
+// Navbar Blur
+
+window.addEventListener("scroll",()=>{
+    const nav=document.querySelector("nav");
+    if(window.scrollY>20){
+        nav.style.background="rgba(15,15,25,.75)";
+        nav.style.backdropFilter="blur(18px)";
+    }else{
+        nav.style.background="rgba(15,15,25,.35)";
+    }
+});
+
+// Floating Logo
+
+const logo=document.querySelector(".hero-right img");
+
+if(logo){
+    setInterval(()=>{
+        logo.animate([
+            { transform:"translateY(0px)" },
+            { transform:"translateY(-12px)" },
+            { transform:"translateY(0px)" }
+        ],{
+            duration:3500,
+            iterations:1
+        });
+    },3500);
+}
+</script>
+</body></html>
