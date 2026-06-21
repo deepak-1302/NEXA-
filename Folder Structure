@@ -1,0 +1,28 @@
+Nexa/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│
+├── backend/
+│   ├── app/
+│   ├── requirements.txt
+│
+├── docs/
+│   ├── PRD.md
+│   ├── ROADMAP.md
+│   ├── ARCHITECTURE.md
+│
+├── assets/
+│   ├── logo/
+│   ├── screenshots/
+│
+└── ai/
+    ├── memory/
+    ├── planner/
+    ├── agents/
