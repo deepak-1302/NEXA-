@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<title>Nexa Login</title>
+	<link rel='stylesheet' href='css/auth.css'>
+ </head>
+<body>
+	<div class='card' role='main' aria-labelledby='site-title'>
+		<header class='card-header'>
+			<div class="brand">
+				<img src="../../images/logo.svg" alt="Nexa logo" class="brand-logo">
+				<div>
+					<h1 id='site-title'>Nexa</h1>
+					<p class='tagline'>From Intent to Action</p>
+				</div>
+			</div>
+		</header>
+
+		<form id='loginForm' novalidate>
+			<div class='field'>
+				<label for='email'>Email</label>
+				<input id='email' name='email' type='email' placeholder='you@company.com' required aria-required='true'>
+				<span class='error' id='emailError' aria-live='polite'></span>
+			</div>
+
+			<div class='field pw'>
+				<label for='pw'>Password</label>
+				<div class='pw-row'>
+					<input id='pw' name='password' type='password' placeholder='Enter your password' required aria-required='true' minlength='8'>
+					<button type='button' id='toggle' aria-pressed='false' aria-label='Show password'>Show</button>
+				</div>
+				<span class='error' id='pwError' aria-live='polite'></span>
+			</div>
+
+			<div class='options'>
+				<label class='remember'><input id='remember' name='remember' type='checkbox'> Remember me</label>
+				<a class='forgot' href='forgot-password.html'>Forgot password?</a>
+			</div>
+
+			<button class='submit' type='submit'>Login</button>
+
+			<p class='meta'>No account? <a href='register.html'>Register</a></p>
+
+			<div id='formMessage' class='form-message' aria-live='polite'></div>
+		</form>
+	</div>
+
+	<script src='js/login.js'></script>
+</body>
+</html>

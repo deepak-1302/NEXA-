@@ -1,0 +1,1 @@
+document.getElementById('theme').onclick=()=>alert('Theme toggle placeholder');

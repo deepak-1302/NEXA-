@@ -31,7 +31,7 @@ z-index:-2;
 body::before{background:var(--p);left:-120px;top:-100px}
 body::after{background:var(--c);right:-120px;top:120px}
 nav{
-position:sticky;top:18px;
+position:static;
 margin:18px auto;
 width:min(1200px,92%);
 display:flex;align-items:center;justify-content:space-between;

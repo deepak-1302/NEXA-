@@ -1,0 +1,26 @@
+:root{--bg:#0f172a;--card:#0f172a88;--panel:#0f172a;--accent:#2563eb;--muted:#94a3b8;--surface:#111827;--input:#1f2937;--danger:#f87171}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#071126 0%,#0f172a 100%);color:#e6eef8;display:grid;place-items:center;height:100vh}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));backdrop-filter:blur(6px);padding:28px;border-radius:14px;width:min(420px,94%);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+.card-header{text-align:center;margin-bottom:8px}
+.card-header h1{margin:0;font-size:28px;letter-spacing:1px}
+.tagline{margin:6px 0 0;color:var(--muted);font-size:13px}
+.brand{display:flex;align-items:center;gap:12px;justify-content:center}
+.brand-logo{width:44px;height:44px;object-fit:cover;border-radius:8px}
+.field{margin-top:14px}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+input[type='email'],input[type='password']{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b1220;color:#e6eef8;font-size:15px}
+input::placeholder{color:#5b708e}
+input:focus{outline:none;box-shadow:0 0 0 4px rgba(37,99,235,0.12);border-color:var(--accent)}
+.pw-row{display:flex;gap:8px;align-items:center}
+#toggle{flex:0 0 auto;padding:10px 12px;border-radius:10px;border:1px solid #334155;background:#0b1220;color:#9ecbff;cursor:pointer}
+#toggle[aria-pressed='true']{background:#123256}
+.options{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.remember{color:var(--muted);font-size:14px}
+.forgot{color:#7dd3fc;text-decoration:none;font-size:14px}
+.submit{margin-top:18px;padding:12px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),#1e40af);color:#fff;font-weight:600;cursor:pointer}
+.submit:active{transform:translateY(1px)}
+.meta{margin-top:12px;color:var(--muted);font-size:13px;text-align:center}
+.form-message{margin-top:10px;font-size:14px;text-align:center}
+.error{display:block;color:var(--danger);font-size:13px;height:18px;margin-top:6px}
+@media (max-width:420px){.card{padding:20px}}

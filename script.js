@@ -70,25 +70,6 @@ glow.style.top=e.clientY+"px";
 
 });
 
-// Navbar Blur
-
-window.addEventListener("scroll",()=>{
-
-const nav=document.querySelector("nav");
-
-if(window.scrollY>20){
-
-nav.style.background="rgba(15,15,25,.75)";
-nav.style.backdropFilter="blur(18px)";
-
-}else{
-
-nav.style.background="rgba(15,15,25,.35)";
-
-}
-
-});
-
 // Floating Logo
 
 const logo=document.querySelector(".hero-right img");

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexa Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <aside>
+    <div class="brand">
+      <img src="../images/logo.svg" alt="Nexa logo">
+      <h1>Nexa</h1>
+    </div>
+    <nav>
+      <a class="active" href="#">Dashboard</a>
+      <a href="#">Chat</a>
+      <a href="#">Tasks</a>
+      <a href="#">Notes</a>
+      <a href="#">Memory</a>
+      <a href="#">Calendar</a>
+      <a href="#">Settings</a>
+    </nav>
+  </aside>
+  <main>
+    <header>
+      <div>
+        <h2>Welcome back, User</h2>
+        <p>Your Nexa workspace is ready.</p>
+      </div>
+      <div class="actions">
+        <button id="theme">🌙</button>
+      </div>
+    </header>
+    <section class="stats">
+      <article class="stat-card">
+        <h3>Tasks</h3>
+        <p>4 pending items</p>
+      </article>
+      <article class="stat-card">
+        <h3>Notes</h3>
+        <p>12 saved notes</p>
+      </article>
+      <article class="stat-card">
+        <h3>Memory</h3>
+        <p>Ready to recall your context.</p>
+      </article>
+    </section>
+    <section class="grid">
+      <div class="card"><h3>AI Assistant</h3><p>Ask Nexa to write, summarize, or automate.</p></div>
+      <div class="card"><h3>Tasks</h3><p>Track your next actions.</p></div>
+      <div class="card"><h3>Notes</h3><p>Capture ideas instantly.</p></div>
+      <div class="card"><h3>Calendar</h3><p>Stay on schedule.</p></div>
+    </section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>
